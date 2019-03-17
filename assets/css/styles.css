@@ -1,0 +1,79 @@
+#welcome {
+  text-align: center;
+  padding: 40px;
+  background-image: url(../../assets/img/bg1.png);
+  background-size: cover;
+  min-height: 400px;
+}
+
+@media (min-width: 992px) {
+  #welcome {
+    /*text-align: center;*/
+    padding: 20px;
+    /*background-image: url(../../assets/img/bg1.png);*/
+    /*background-size: cover;*/
+    /*min-height: 400px;*/
+  }
+}
+
+#welcome .jumbotron {
+  border-radius: 20px;
+  padding: 50px;
+  background-color: rgba(255,255,255,0.5);
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  #welcome .jumbotron {
+    border-radius: 20px;
+    /*padding: 20px;*/
+    /*background-color: rgba(255,255,255,0.7);*/
+    /*max-width: 800px;*/
+    /*margin: auto;*/
+  }
+}
+
+#projects {
+  text-align: center;
+  padding: 40px;
+  background-image: url(../../assets/img/bg2.png);
+  background-size: cover;
+  min-height: 400px;
+}
+
+@media (min-width: 300px) {
+  #projects {
+    /*text-align: center;*/
+    padding: 20px;
+    /*background-image: url(../../assets/img/bg2.png);*/
+    /*background-size: cover;*/
+  }
+}
+
+#projects .jumbotron {
+  border-radius: 20px;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.5);
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  #columns .jumbotron {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+#columns {
+  text-align: center;
+  padding: 40px;
+  background-image: url(../../assets/img/bg2.png);
+  background-size: cover;
+  min-height: 400px;
+}
+

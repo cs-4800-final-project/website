@@ -1,38 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
-    <title>SRS - D.A.M.N. Corp</title>
-    <link href='../css/srs.css' rel="stylesheet">
-  </head>
-  <body>
-  		<header class="siteNavigation">
-            <h1 class="hidden">Digital Audio Media Network Corp</h1>
-            <nav class="siteNavigation-links">
-                <nav class="siteNavigation-links">
-                <h2 class="hidden">Site Navigation</h2>
-                <a class="siteNavigation-link" href="..">DAMN Corp</a>
-				<a class="siteNavigation-link" href="../plans">Plans</a>
-				<a class="siteNavigation-link" href="../log">Log</a>
-				<a class="siteNavigation-link" data-s="active" href=".">SRS</a>
-				<a class="siteNavigation-link" href="../about">About</a>
-            </nav>
-        </header>
-        
-       
-    	<footer class="directory">
-            <section>
-                <h2 class="hidden">Directory</h2>
-                <span class="directory-title">Digital Audio Media Network Corp</span>
-                <nav class="directory-links">
-                    <h3 class="hidden">Website</h3>
-                    <a class="directory-link" href="..">Home</a>
-                    <a class="directory-link" href="../plans/">Plans</a>
-                    <a class="directory-link" href="../log">Logs</a>
-                    <a class="directory-link" href=".">SRS</a>
-                    <a class="directory-link" href="../about/">About</a>
-                </nav>
-            </section>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>company</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/Team-Boxed.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: #222222;color: #ffffff;">
+            <div class="container"><a class="navbar-brand" href="../index.html" style="color: #ffffff;">DAMN Corp</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="../project/index.html" style="color: #ffffff;">Project</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="../srs/index.html" style="color: #ffffff;">SRS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="../logs/index.html" style="color: #dddddd;">Logs</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="../about/index.html" style="color: #ffffff;">About Us</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <div id="srs">
+        <div id="intro">
+            <h1>1 Introduction</h1>
+            <p>This section will provide a general introduction to this project, the functional requirements, its scope, and an overview of the SRS document as a whole.</p>
+            <h3>1.1 General Description</h3>
+            <p>“NuFu” is a subscription based media streaming service which charges a $10/monthly base fee for access to 10 show slots (access to ten series). Additional slots thereafter will come in at an additional $1.50 per slot and any movie can be rented
+                for $0.50 for 24 hours. The passages below discuss the functions and details for the website which will serve as the platform for the “NuFu” streaming service.</p>
+            <h3>1.2 Functional Requirements</h3>
+            <ul>
+                <li>Account Handler/Security - Use Hierarchy System/Permission Level <br>- (Guest - 0, User (Regular/Paid) - 1/2, Customer Support - 3,Admin - 4)<br></li>
+                <li>User Registration<br>- Database: Name, Address, Billing,&nbsp;Subscriptions, Messages,&nbsp;Account Type<br></li>
+                <li>Mailing Service<br></li>
+                <li>Video Search Bar<br>- Filter,&nbsp;Sort by Type<br></li>
+                <li>User Search Bar<br>- By Username<br></li>
+                <li>Profiles<br>-&nbsp;Friend System,&nbsp;Comments,&nbsp;Rating System,&nbsp;Critic System<br></li>
+                <li>Live chat<br>-&nbsp;Moderation System, Spam filter, Language filter,&nbsp;Muting,&nbsp;Blocking,&nbsp;Banning<br>- General Live Chat or Private Live Chat&nbsp;<br>- Option to hide chat<br></li>
+                <li>Subscription Handling<br>-&nbsp;Payment System<br></li>
+                <li>Video Streaming<br>- Programming provided by service such as Netflix or Hulu<br></li>
+            </ul>
+            <h3>1.3 Scope</h3>
+            <p>This media streaming project is a web based subscription service designed to allow users to watch various movies, programs, and shows at a minimal cost. The user will be able buy a subscription to the service for an initial $10, which can
+                be renewed every month.This initial cost grants them 10 series of their choosing for 30 days. If the user wishes for more shows, they can pay an additional $1.50 for a new series slot to watch for that month. If the subscribed user wishes
+                to rent a movie for just 24 hours, they can pay $0.50 for just that. The video service will also have a comments section and the ability to rate the show on a basis of 1 to 5.<br><br>In addition to the media streaming service, this service
+                also provides subscribed users with their own profile. This profile shows others the user's favorite shows and their general description (which can be modified by the user.&nbsp;The user is able to choose which series they wish to watch
+                through the user of a search bar, which can find shows by name, genre, year, service, and studio. Additionally, notifications can be enabled by the user to let them know if a new episode or show has aired.<br><br>The entirety of this service
+                will be done through the use of a cloud service and thus require Internet access by the user and the service itself.&nbsp;<br></p>
+            <h3>1.4 Summary of Document<br></h3>
+            <p>There are a total of 7 chapters, including this one. The following chapter will provide overview of the project. First, it will provide a background, which will explain the reasoning for the introduction of this service. Secondly, it will
+                describe the user interface and its aesthetics from the perspective of the user as either a guest or subscriber. Finally, this chapter will give a brief description on its contextual background, which deals with the influences and references
+                that this service has gathered from other services and how that has been incorporated into this one.&nbsp;The third chapter will describe this service's performance details and how exactly it will interact with the user as either a guest
+                or subscriber.&nbsp;The fourth chapter will explain this service's hardware specifications and what the user will need in order to run it.The fifth chapter will discuss the maintenance planning that will occur after the project has concluded.
+                This includes any bug fixes or alterations that occur after the service goes live.<br>The sixth chapter will explain the functionality of the service from the perspective of the user.The seventh chapter will provide an overview of the
+                logging, security measures, and other protective implementations that the service will provide to the user as a subscriber to its functionalities.<br></p>
+        </div>
+        <div id="overview">
+            <h1>2 Overview of Project</h1>
+            <p>This section will provide a general overview of the project and its background.</p>
+            <h3>2.1 Background</h3>
+            <p>The first inspiration behind “NuFu” came after the constant hike in prices from streaming services. Most notably Netflix recently raised their prices to a whopping $12/month for the cheapest HD plan. This caused an uproar amongst many casual
+                customers who have netflix just to watch a few select shows and movies. Although the $12 price tag might be worth it for what Netflix is offering in return, many users have and most likely will not take full advantage to justify the increase
+                in price.&nbsp;<br><br>Secondly, many homes now have both Netflix and Hulu accounts to make sure they can watch shows from both platforms. However, that also means the user has to pay a premium $12/month for Netflix and an additional $10/month
+                for Hulu. That is over $22/month just to watch a handful of shows for most people. This doesn’t include the additional $100+ most families pay for cable and the like. It has come to a point to where most teenagers and young adults have
+                decided to either unsubscribe from these services completely or share an account with a friend to split the pricey costs. Netflix and other services have responded to account sharing between non-family members by enforcing a limit to how
+                many people can watch simultaneously. However, this did not push the people account sharing to subscribe with their own account, rather it just made them stop using the service completely. All in all, people are paying for too much content,
+                99% of which they will never use nor do they have the time to make use of them.&nbsp;<br><br>Finally, Disney announced last year that they will be coming out with their own streaming service. Following this announcement, they asked Netflix
+                to discontinue shows that Disney has the licence to, most notably the Marvel show series. Most likely, Disney will continue those shows on their own service when it comes out in the near future but questions regarding who will play the
+                characters the audience have grown to love and where will the show pick up from have had some customers outraged. This will just lead to another competing streaming service that most customers will likely have to subscribe to since Disney
+                has the rights to a lot shows and movies.&nbsp;</p>
+            <h3>2.2 Web Structure</h3>
+            <ul>
+                <li><strong>Misc. Features that I’m putting here temporarily</strong><br>-&nbsp;Hover cursor over show/movie to see description, user rating, movie length<br>- General Chat in main lobby<br>&nbsp; &nbsp;* General chat will be split into channels
+                    per every 50 users.<br>&nbsp; &nbsp;*&nbsp;Talk to users, ask for show recommendations and chat about latest stuff<br>&nbsp; &nbsp;*&nbsp;You can sort chat-rooms by show or movie to discuss the latest episodes&nbsp;<br>&nbsp; &nbsp;*
+                    Include “Spoiler” blur feature</li>
+                <li><strong>Landing page&nbsp;</strong><br>- The default page that users with Guest level authorization will see<br>-&nbsp;Company Info<br>-&nbsp;Displays service information and price.&nbsp;<br>- List available shows<br>-&nbsp;Access to:<br>&nbsp;
+                    &nbsp;* Pilot episodes and movie trailers<br>&nbsp; &nbsp;* Reviews and ratings</li>
+                <li><strong>Sidebar Menu</strong><br>- My Profile:&nbsp;Previously Watched,&nbsp;My Favorite Shows/ Movies<br>-&nbsp;My Slots/Rentals:&nbsp;Should show currently active slots and movies<br>-&nbsp;My Wishlist (Shows you’re planning to watch
+                    but haven’t quite gotten to yet)<br>-&nbsp;My Watchlist (Sort of like History page)<br>&nbsp; &nbsp;* List all your finished/unfinished shows/movies<br>&nbsp; &nbsp;* Should have a subsection for finished and another for unfinished,<br>&nbsp;
+                    &nbsp;* Automatically updates after starting or finishing a show/movie.<br>- My Downloads : (Maybe not a needed feature as it’s not a mobile app that you can take on the go)</li>
+                <li><strong>Community&nbsp;</strong>- My Profile Page, My Friends,&nbsp;My Blocked Users/ Blacklist, My Communities, and&nbsp;Forums</li>
+                <li><strong>Options/Settings&nbsp;</strong>- Privacy, My Account - (Payments, Manage Subscription, Billing, Change email/pw, Update Payment Info, Upgrade Plan, buy more slots, etc etc),&nbsp;Manage Notifications,&nbsp;Help, and&nbsp;Sign Out</li>
+                <li><strong>About us Page</strong> -&nbsp;&nbsp;This can be a cover up for our log page of what each person has done on our website, since there’s really no “About us” to talk about as we aren’t a real company or service.&nbsp;</li>
+            </ul>
+            <h3>2.3 Contextual Information</h3>
+            <p>This service is modeled after similar streaming and video viewing sites. The primary site that this service is influenced from is Netflix with its subscription service and media viewing cite. Our project also gathers influence from websites
+                like Youtube and various movie rating sites. Like Youtube, our service will allow users to rate videos, but instead of rating on the basis of "thumbs up" or "thumbs down," each user is allowed to rate on a scale of one star to five stars,
+                with the comments being used to explain their reasoning.&nbsp;<br><br>In contrast to Netflix, our service gives the user ten "slots," from which they pick certain series that they want to watch. Unlike sites like Amazon or Netflix, where
+                the user has to pay the full subscription price even if they only use a small fraction of the services, our site is more affordable and allows the user to pick the shows that they actually want to see. This allows the user to pick and
+                choose what they want to watch without wasting money on paying for services that they won't even use. The user is also able to buy a new slot for a new show for the month if they want to watch another one.<br></p>
+        </div>
+        <div id="performance">
+            <h1>3 Performance Measures</h1>
+            <p>This section contains all of the functional and quality requirements of the system. </p>
+            <h3>3.1 Expected Performance</h3>
+            <p>This service is expected to run on a web browser with a a proper internet connection (minimum recommended 5.0 mbps). The video and audio quality of the shows provided are expected to be shown at the same quality level as they are on the devices
+                they were recorded on, so long as the internet is working.</p>
+            <h3>3.2 Costs</h3>
+            <p>This service is maintained using the OVH: Innovation for Freedom VPS SSD 1, which provides a website for around $3.35/month. </p>
+        </div>
+        <div id="specification">
+            <h1>4 Hardware Specification</h1>
+            <p>This section will detail the necessary hardware needed to be able to run this web service.</p>
+            <h3>4.1 Supported Browsers</h3>
+            <p>NuFu TV shows and movies can be streamed using our HTML5 player on PCs running Windows XP or later, Macs running OS X Tiger (v10.4.11) or later. You can find the complete list of requirements for HTML5 below.<br>HTML5<br>- Supported Browsers:&nbsp;<br>-
+                Google Chrome v.37 or later on Windows 7 or later, Mac OS X 10.09 or later, Chrome OS, or Linux<br>- Internet Explorer 11 or later on Windows 8.1 or later<br>- Mozilla Firefox version 58 or later on Windows Vista or later, Mac OS X 10.7
+                or later, or Linux<br>- Opera version 33 or later on Windows Vista Service Pack 2 or later and Mac OS X 10.9 or later<br>- Safari on Mac OS X 10.10 or later (Yosemite)</p>
+            <h3>4.2 Internet Connection Speed Recommendations</h3>
+            <p>Below are the internet download speed recommendations for streaming TV shows and movies on NuFu<br><br>0.5 Megabits per second - Required broadband connection speed<br>1.5 Megabits per second - Recommended broadband connection speed<br>3.0
+                Megabits per second - Recommended for SD Quality<br>5.0 Megabits per second - Recommended for HD quality<br>25.0 Megabits per second- Recommended for Ultra HD Quality</p>
+            <h3>4.3 Server Hosting</h3>
+            <p>For testing and hosting, the service will be provided by OVH (https://www.ovh.com/world/).</p>
+        </div>
+        <div id="maintain">
+            <h1>5 Maintenance Planning</h1>
+            <p>This section will describe how this service will be maintained and updated after it has been officially released.</p>
+            <h3>5.1 Post-Release Support</h3>
+            <p>Source: https://www.renegade-empire.com/website-maintenance-checklist/<br>- Daily/weekly maintenance<br>- After each major update check to see if all pages are loading<br>- Perform backups<br>- Keep logs<br>- Check for consumer complaints<br>-
+                Check for broken links/videos<br>- Remove/ban spam comments/accounts</p>
+        </div>
+        <div id="function">
+            <h1>6 Functionality</h1>
+            <p>This section will explain the overall functionally of the site as both a guest and a subscriber.</p>
+            <h3>6.1 Subscriber Functionality</h3>
+            <p>Customers who choose to subscribe to NuFu will have the following functions available to them:</p>
+            <ul>
+                <li>Option to stream a minimum of 10 different shows</li>
+                <li>Create a profile that will help with making it easier to access their shows</li>
+                <li>Join the chat / discussion boards to discuss an episode or movie</li>
+                <li>Search for titles by genre, actors, title, and more TBD</li>
+                <li>Rent out movies of their choice for a flat $0.50 fee</li>
+                <li>Receive notifications / emails from NuFu regarding their membership</li>
+                <li>Favorite and Rate shows on a scale of 1-5 stars</li>
+            </ul>
+        </div>
+        <div id="security">
+            <h1>7 Logging, Security, and more</h1>
+            <p>This section will cover the basics behind our plans for security and authentication.</p>
+            <h3>7.1 Security</h3>
+            <p>Our customers privacy is our concern so we pledge to create an infrastructure that will help disguise and hide our subscriber’s personal information.&nbsp;<br><br>One way of going about ensuring privacy on our site will be by using encryption.
+                There will be many encryption options available to us as we get closer to deploying this feature on our site. Currently we have decided to make it a priority to encrypt the user’s passwords, address, and credit card information. If need
+                be later on, we might also encrypt the user’s full name to ensure their anonymity.&nbsp;<br><br>Another feature we will implement to ensure the user’s security will be not to take information we do not need. It may seem obvious but many
+                times a website or service will ask for information they never needed to have in the first place and this would just lead to more data being leaked if the service is compromised. For example, we will not be asking the user to access their
+                microphones and cameras since our site has no use for these.</p>
+        </div>
+    </div>
+    <div class="footer-clean" style="color: #ffffff;background-color: #222222;">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Project</h3>
+                        <ul>
+                            <li><a href="#">SRS Agreement</a></li>
+                            <li><a href="#">Developement Logs</a></li>
+                            <li><a href="#">References</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <ul></ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <p class="copyright">Digital Audio Media Network Corp © 2017</p>
+                    </div>
+                </div>
+            </div>
         </footer>
-  </body>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
 </html>
